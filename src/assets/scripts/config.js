@@ -34,16 +34,16 @@
  */
 require.config({
     paths: {
-        // this empty string tells r.js to use single quotes when installing
-        // bower modules automatically. Otherwise defaults to double quotes.
-        'requirejs': ''
+        requirejs: '../vendor/requirejs/require',
+        jquery: '../vendor/jquery/jquery',
+        modernizr: '../vendor/modernizr/modernizr',
+        'nerdery-function-bind': '../vendor/nerdery-function-bind/index',
+        'nerdery-request-animation-frame': '../vendor/nerdery-request-animation-frame/index'
     },
-
     shim: {
-
-        'modernizr': { exports: 'Modernizr' },
-        
+        modernizr: {
+            exports: 'Modernizr'
+        }
     },
-
     waitSeconds: 120
 });
