@@ -1,0 +1,18 @@
+{
+  "generator-nerdery": {
+    "title": "symbol-library",
+    "name": "symbol-library",
+    "description": "Library of standard HTML elements",
+    "version": "1.0.0",
+    "markup": "MarkupHandlebars",
+    "styles": "StylesSass",
+    "scripts": "ScriptsRequireJs",
+    "framework": "FrameworkVanilla",
+    "frameworkVanillaFeatures": [
+      "jQuery",
+      "modernizr",
+      "requestAnimationFrame"
+    ],
+    "scriptsVanillaNamespace": "NRD"
+  }
+}
