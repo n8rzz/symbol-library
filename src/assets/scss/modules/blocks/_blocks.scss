@@ -1,0 +1,23 @@
+/* ---------------------------------------------------------------------
+ Blocks
+------------------------------------------------------------------------ */
+.blocks {
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 0;
+}
+.blocks > * {
+    font-size: $BASE_FONT_SIZE;
+    display: inline-block;
+}
+
+.blocks_2up {
+    width: 50%;
+}
+
+.blocks_3up {
+    width: 33%;
+}
+.blocks_4up {
+    width: 25%;
+}

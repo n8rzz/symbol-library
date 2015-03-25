@@ -77,6 +77,13 @@ module.exports = function(grunt) {
                 files: ['<%= env.DIR_SRC %>/assets/{scripts,vendor}/**/*.js'],
                 tasks: ['buildScripts']
             }
+        },
+        hologram: {
+            generate: {
+                options: {
+                    config: 'hologram_config.yml'
+                }
+            }
         }
     });
 
@@ -100,7 +107,7 @@ module.exports = function(grunt) {
     );
 
     grunt.registerTask('docs', 'Generate documentation.',
-        ['clean:docs', 'docsScripts', 'clean:tmp']
+        ['clean:docs', 'docsScripts', 'hologram', 'clean:tmp']
     );
 
     grunt.registerTask('install', 'Run installation tasks.',
