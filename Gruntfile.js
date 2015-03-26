@@ -103,7 +103,7 @@ module.exports = function(grunt) {
     );
 
     grunt.registerTask('build', 'Compile source code and outputs to destination.',
-        ['clean:dest', 'buildStatic', 'buildMarkup', 'buildStyles', 'buildScripts', 'clean:tmp']
+        ['clean:dest', 'buildStatic', 'buildMarkup', 'buildStyles', 'buildScripts', 'hologram', 'clean:tmp']
     );
 
     grunt.registerTask('docs', 'Generate documentation.',

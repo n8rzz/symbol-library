@@ -1,14 +1,45 @@
+/*doc
+---
+title: Blocks
+name: blocks
+category: Base CSS
+---
+
+Blocks Elements:
+
+```html_example
+    <ul class="blocks">
+        <li class="blocks_2up">2 blocks</li>
+        <li class="blocks_2up">2 blocks</li>
+    </ul>
+
+    <ul class="blocks">
+        <li class="blocks_3up">3 blocks</li>
+        <li class="blocks_3up">3 blocks</li>
+        <li class="blocks_3up">3 blocks</li>
+    </ul>
+    <ul class="blocks">
+        <li class="blocks_4up">4 blocks</li>
+        <li class="blocks_4up">4 blocks</li>
+        <li class="blocks_4up">4 blocks</li>
+        <li class="blocks_4up">4 blocks</li>
+    </ul>
+```
+*/
 /* ---------------------------------------------------------------------
  Blocks
 ------------------------------------------------------------------------ */
 .blocks {
-    vertical-align: top;
-    box-sizing: border-box;
+    margin: -20px 0 0 -20px;
     font-size: 0;
 }
 .blocks > * {
-    font-size: $BASE_FONT_SIZE;
     display: inline-block;
+    padding: 20px 0 0 20px;
+    vertical-align: top;
+    font-size: $BASE_FONT_SIZE;
+    box-sizing: border-box;
+//    border: 1px solid;
 }
 
 .blocks_2up {
@@ -16,7 +47,7 @@
 }
 
 .blocks_3up {
-    width: 33%;
+    width: 33.3334%;
 }
 .blocks_4up {
     width: 25%;
