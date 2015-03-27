@@ -1,34 +1,57 @@
 /*doc
 ---
-title: Hlist
-name: hlist
-category: Base CSS
+title: hlist tight
+name: hlist_tight
+category: Base
 ---
 
-hlist elements:
+Horizontal list elements with tight spacing:
 
 ```html_example
-    <ul class="hlist hlist_tight">
-        <li>hlist tight</li>
-        <li>hlist tight</li>
-        <li>hlist tight</li>
-        <li>hlist tight</li>
-    </ul>
-    <ul class="hlist hlist_loose">
-        <li>hlist loose</li>
-        <li>hlist loose</li>
-        <li>hlist loose</li>
-        <li>hlist loose</li>
-    </ul>
+<ul class="hlist hlist_tight">
+    <li>hlist tight</li>
+    <li>hlist tight</li>
+    <li>hlist tight</li>
+    <li>hlist tight</li>
+</ul>
+```
+*/
 
-    <ul class="hlist mix-hlist_divided">
-        <li>hlist divided</li>
-        <li>hlist divided</li>
-        <li>hlist divided</li>
-        <li>hlist divided</li>
-        <li>hlist divided</li>
-        <li>hlist divided</li>
-    </ul>
+/*doc
+---
+title: hlist loose
+name: hlist_loose
+category: Base
+---
+
+Horizontal list elements with loose spacing:
+
+```html_example
+<ul class="hlist hlist_loose">
+    <li>hlist loose</li>
+    <li>hlist loose</li>
+    <li>hlist loose</li>
+    <li>hlist loose</li>
+</ul>
+```
+*/
+
+/*doc
+---
+title: hlist divided
+name: hlist_divided
+category: Base
+---
+
+Horizontal list elements with pipes separating each element:
+
+```html_example
+<ul class="hlist mix-hlist_divided">
+    <li>hlist divided</li>
+    <li>hlist divided</li>
+    <li>hlist divided</li>
+    <li>hlist divided</li>
+</ul>
 ```
 */
 /* ---------------------------------------------------------------------

@@ -59,7 +59,7 @@ module.exports = function(grunt) {
             },
             watchMarkup: {
                 files: ['<%= env.DIR_SRC %>/**/*.{hbs,html}'],
-                tasks: ['buildMarkup']
+                tasks: ['buildMarkup', 'hologram']
             },
             watchStatic: {
                 files: [
@@ -67,15 +67,15 @@ module.exports = function(grunt) {
                     '<%= env.DIR_SRC %>/**/*.{php,rb,py,jsp,asp,aspx,cshtml,txt}',
                     '<%= env.DIR_SRC %>/assets/media/**',
                 ],
-                tasks: ['buildStatic']
+                tasks: ['buildStatic', 'hologram']
             },
             watchStyles: {
                 files: ['<%= env.DIR_SRC %>/assets/{scss,vendor}/**/*.{s,}css'],
-                tasks: ['buildStyles']
+                tasks: ['buildStyles', 'hologram']
             },
             watchScripts: {
                 files: ['<%= env.DIR_SRC %>/assets/{scripts,vendor}/**/*.js'],
-                tasks: ['buildScripts']
+                tasks: ['buildScripts', 'hologram']
             }
         },
         hologram: {
