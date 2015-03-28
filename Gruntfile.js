@@ -70,11 +70,11 @@ module.exports = function(grunt) {
                 tasks: ['buildStatic', 'hologram']
             },
             watchStyles: {
-                files: ['<%= env.DIR_SRC %>/assets/{scss,vendor}/**/*.{s,}css'],
+                files: ['<%= env.DIR_SRC %>/assets/scss/**/*s'],
                 tasks: ['buildStyles', 'hologram']
             },
             watchScripts: {
-                files: ['<%= env.DIR_SRC %>/assets/{scripts,vendor}/**/*.js'],
+                files: ['<%= env.DIR_SRC %>/assets/scripts/**/*'],
                 tasks: ['buildScripts', 'hologram']
             }
         },
