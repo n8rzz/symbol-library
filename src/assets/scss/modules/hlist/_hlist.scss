@@ -1,6 +1,23 @@
 /*doc
 ---
+title: Hlist
+name: hlist
+category: Base
+---
+
+```html_example
+<ul class="hlist">
+    <li>hlist</li>
+    <li>hlist</li>
+    <li>hlist</li>
+    <li>hlist</li>
+</ul>
+```
+*/
+/*doc
+---
 title: Hlist tight
+parent: hlist
 name: hlist_tight
 category: Base
 ---
@@ -20,6 +37,7 @@ Horizontal list elements with tight spacing:
 /*doc
 ---
 title: Hlist loose
+parent: hlist
 name: hlist_loose
 category: Base
 ---
@@ -39,6 +57,7 @@ Horizontal list elements with loose spacing:
 /*doc
 ---
 title: Hlist divided
+parent: hlist
 name: hlist_divided
 category: Base
 ---

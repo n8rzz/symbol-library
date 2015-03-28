@@ -44,18 +44,33 @@ module.exports = function(grunt) {
             ]
         },
 
+        connect: {
+            options: {
+                port: 9001,
+                protocol: 'http',
+                base: '<%= env.DIR_DEST %>',
+                livereload: true
+            },
+            server: {
+
+            }
+        },
+
         // Watches files and directories changes and runs associated tasks
         // automatically. Compatible with the free LiveReload browser
         // extensions to reload pages after watch tasks complete:
         // http://go.livereload.com/extensions
         watch: {
             options: {
-                livereload: {
-                    // Default port for LiveReload
-                    // Note: will collide with an error message if others are
-                    // running this on a shared server
-                    port: 35729
-                }
+                event: 'all',
+                livereload: true
+
+                //livereload: {
+                //    // Default port for LiveReload
+                //    // Note: will collide with an error message if others are
+                //    // running this on a shared server
+                //    port: 35729
+                //}
             },
             watchMarkup: {
                 files: ['<%= env.DIR_SRC %>/**/*.{hbs,html}'],
@@ -64,7 +79,7 @@ module.exports = function(grunt) {
             watchStatic: {
                 files: [
                     '<%= env.DIR_SRC %>/**/.htaccess',
-                    '<%= env.DIR_SRC %>/**/*.{php,rb,py,jsp,asp,aspx,cshtml,txt}',
+                    '<%= env.DIR_SRC %>/**/*.{php,rb,py,jsp,asp,aspx,cshtml,txt,yml,json,md}',
                     '<%= env.DIR_SRC %>/assets/media/**',
                 ],
                 tasks: ['buildStatic', 'hologram']
@@ -109,6 +124,8 @@ module.exports = function(grunt) {
     grunt.registerTask('docs', 'Generate documentation.',
         ['clean:docs', 'docsScripts', 'hologram', 'clean:tmp']
     );
+
+    grunt.registerTask('launch', ['build', 'connect', 'watch']);
 
     grunt.registerTask('install', 'Run installation tasks.',
         ['installScripts']

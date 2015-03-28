@@ -8,7 +8,7 @@ destination: web/styleguide
 documentation_assets: src/assets/vendor/hologram-github-theme
 
 # Category that will be used as the index.html (optional)
-index: styleguide
+index: base
 
 # A list of relative paths to folders containing any dependencies to copy
 dependencies:
@@ -17,8 +17,8 @@ dependencies:
 
 # The CSS files to be included in the styleguide
 css_include:
-  - '/assets/styles/legacy.css'
-  - '/assets/styles/modern.css'
+  - '../assets/styles/legacy.css'
+  - '../assets/styles/modern.css'
 
 
 # The global title that is displayed at the top of the pages
